@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import numeral from 'numeral';
 
 import youtube from "./youtube";
 import useInterval from "./useInterval";
@@ -43,10 +44,10 @@ const useSubCount = username => {
       {title ? `${title}` : null}
       </div>
       <div className="avatar">
-        <img className="thumbnail" src={thumbnail} ></img>
+        <img className="thumbnail" src={thumbnail} alt={title} ></img>
       </div>
       <div className="subCount">
-        {title ? subCount: null}
+        {title ? numeral(subCount).format('0,0'): null}
       </div>
       {title ? `subscribers`: null}
       <div className="difference" style={{ color: difference < 0 ? `red` : `limegreen` }}>
