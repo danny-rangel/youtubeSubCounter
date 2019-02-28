@@ -1,33 +1,67 @@
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  color: #000000;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  margin: 40px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #ff0000;
+  border: 0.2px solid #282828;
+  box-shadow: 1px 2px 4px #282828;
+  border-radius: 0 0 8px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info {
+  font-size: 20px;
+  padding: 20px 20px 5px;
+  font-weight: lighter;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.usernameInput {
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right:none;
+  border-top:none;
+  font-size: 25px;
+  padding: 5px 0px;
+  text-align: center;
+  background-color: white;
+  color: #000000;
+  outline: none;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.subCount {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.difference {
+  font-size: 40px;
+  margin-top: 20px;
 }
