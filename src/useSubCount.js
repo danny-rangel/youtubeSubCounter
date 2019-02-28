@@ -25,7 +25,7 @@ const useSubCount = username => {
       setTitle("");
     } else {
       setDifference(
-        subCount - response.data.items[0].statistics.subscriberCount
+        response.data.items[0].statistics.subscriberCount - subCount
       );
       setSubCount(response.data.items[0].statistics.subscriberCount);
       setTitle(response.data.items[0].snippet.title);
