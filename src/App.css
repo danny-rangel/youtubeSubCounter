@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+input {
+  min-width: 20rem;
+}
+
 .App {
   text-align: center;
   color: #000000;
