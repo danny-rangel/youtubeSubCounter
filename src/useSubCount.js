@@ -4,20 +4,21 @@ import numeral from 'numeral';
 import youtube from "./youtube";
 import useInterval from "./useInterval";
 
-const useSubCount = username => {
+const useSubCount = id => {
   const [subCount, setSubCount] = useState(0);
   const [difference, setDifference] = useState(0);
   const [title, setTitle] = useState(null);
   const [thumbnail, setThumbnail] = useState(null);
 
   useInterval(() => {
-    fetchSubCount(username);
+    fetchSubCount(id);
   }, 1000);
 
-  const fetchSubCount = async username => {
+  const fetchSubCount = async id => {
     const response = await youtube.get("/channels", {
       params: {
-        forUsername: username
+        part: "snippet,contentDetails,statistics",
+        id
       }
     });
 
@@ -35,7 +36,7 @@ const useSubCount = username => {
   };
 
   useEffect(() => {
-    fetchSubCount(username);
+    fetchSubCount(id);
   }, []);
 
   return (
