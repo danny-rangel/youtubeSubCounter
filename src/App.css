@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 input {
@@ -64,11 +64,10 @@ h3 {
     border-radius: 8px;
     border: 1px solid #dfe1e5;
     box-shadow: none;
-    height: 39px;
-    width: 100%;
+    height: 30px;
+    width: 90%;
     border-radius: 24px;
-    height: 44px;
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px 0px;
     text-align: center;
     background-color: white;
@@ -76,7 +75,7 @@ h3 {
 }
 
 .title {
-    font-size: 40px;
+    font-size: 30px;
     justify-self: center;
 }
 
@@ -88,18 +87,18 @@ h3 {
 
 .thumbnail {
     border-radius: 50%;
-    width: 120px;
+    width: 100px;
     justify-self: center;
 }
 
 .subCount {
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     justify-self: center;
 }
 
 .difference {
-    font-size: 40px;
+    font-size: 25px;
     margin-top: 20px;
     justify-self: center;
 }
@@ -110,7 +109,7 @@ h3 {
     }
 
     .subCount {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .difference {
