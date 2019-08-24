@@ -24,6 +24,7 @@ h3 {
     height: 100%;
     margin: 0;
     display: grid;
+    grid-template-rows: 80px 1fr;
 }
 
 .content {
@@ -31,7 +32,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
